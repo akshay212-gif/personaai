@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PersonaAI – Digital Twin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="blob2"></div>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">✦ AI-POWERED DIGITAL TWIN</div>
+    <h1>Persona<span>AI</span></h1>
+    <p class="subtitle">Give it a memory. Ask it anything. Watch it become them.</p>
+  </div>
+
+  <!-- Step 1 -->
+  <div class="step">
+    <div class="step-label">
+      <div class="step-num">1</div>
+      <label>Person's Name</label>
+    </div>
+    <input type="text" id="personaName" placeholder="e.g. Raj, Elon, My Best Friend…" />
+  </div>
+
+  <!-- Step 2 -->
+  <div class="step">
+    <div class="step-label">
+      <div class="step-num">2</div>
+      <label>Memory — describe this person</label>
+    </div>
+    <textarea id="memory" rows="6" placeholder="e.g. I am Raj. I speak casually, use words like 'bhai' and 'yaar'. I love cricket and chai. I hate waking up early. I'm sarcastic but kind."></textarea>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="step">
+    <div class="step-label">
+      <div class="step-num">3</div>
+      <label>Your Question</label>
+    </div>
+    <input type="text" id="question" placeholder="e.g. What do you think about AI?" />
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="btn-wrap">
+    <button id="askBtn" onclick="askAI()">⚡ Ask the Twin</button>
+  </div>
+
+  <!-- Response -->
+  <div class="response-box" id="responseBox">
+    <div class="response-header">
+      <span class="response-label">Response</span>
+      <span class="persona-tag" id="personaTag">No persona set</span>
+    </div>
+    <p id="response" class="placeholder">Response will appear here…</p>
+  </div>
+
+  <div class="footer">Powered by Claude · API key secured server-side · Built for Hackathon 🏆</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
