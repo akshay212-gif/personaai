@@ -1,6 +1,6 @@
 # 🧠 PersonaAI — Digital Twin Generator
 
-> Create a digital twin of any person using natural language memory. Powered by Claude (Anthropic).
+> Create a digital twin of any person using natural language memory. 
 
 ---
 
@@ -15,19 +15,13 @@ npm install
 ```bash
 cp .env.example .env
 ```
-Open `.env` and replace the placeholder with your real key:
-```
-ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxx
-```
-Get your key at → https://console.anthropic.com
-
 ### 3. Run the server
 ```bash
 npm start
 ```
 
 ### 4. Open the app
-Visit → http://localhost:3000
+https://personaai-2aa8.onrender.com
 
 ---
 
@@ -62,7 +56,7 @@ personaai/
 |----------|-----------------------------|
 | Frontend | HTML, CSS, Vanilla JS       |
 | Backend  | Node.js + Express           |
-| AI       | Claude Sonnet (Anthropic)   |
+| AI       | GROQ AI   |
 | Styling  | Syne + DM Mono (Google Fonts) |
 
 ---
@@ -71,11 +65,9 @@ personaai/
 
 1. User fills in: **name**, **memory** (personality description), **question**
 2. Frontend sends these to `/ask` on the Express server
-3. Server builds a system prompt and calls Anthropic's API securely
+3. Server builds a system prompt and calls GROQ's API securely
 4. Response streams back to the browser with a typewriter animation
 
 ---
 
-## 🏆 Built for Hackathon
 
-Made with ❤️ using Claude AI
