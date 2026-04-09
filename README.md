@@ -15,9 +15,8 @@
 ## 📸 Preview
 
 <p align="center">
-  <img src="https://via.placeholder.com/800x400?text=PersonaAI+Preview" width="80%">
+  <img src="https://github.com/akshay212-gif/personaai/blob/main/Personaai.preview.png" width="80%" />
 </p>
-
 ---
 
 ## ✨ Features
